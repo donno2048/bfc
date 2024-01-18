@@ -28,5 +28,5 @@ def compile(input_file: str, output_file: str) -> None:
     open("temp.asm", 'w').write(bf2asm(open(input_file, 'r').read()))
     run(["as", "-W", "temp.asm"])
     run(["ld", "a.out", "-o", output_file])
-#    remove("temp.asm")
+    remove("temp.asm")
     remove("a.out")
