@@ -1,37 +1,25 @@
-# nothingness
+# bfc
 
-This is nothing, just a template for PyPI packages
+A brainfuck compiler for 64-byte arm linux
+
+Yes, it is a compiler, not an interpreter.
 
 ## Installation
 
 ### From PyPI
 
 ```sh
-pip3 install nothingness
+pip3 install bfcc
 ```
 
 ### From GitHub
 
 ```sh
-pip3 install git+https://github.com/donno2048/nothingness
+pip3 install git+https://github.com/donno2048/bfc
 ```
 
 ## Usage
 
-### Import fun from \_\_init__.py
-
-```py
-from nothingness import fun
-```
-
-### Run \_\_main__.py
-
 ```sh
-python3 -m nothingness
-```
-
-### Run main from \_\_main__.py
-
-```sh
-nothingness
+bfc input.bf output
 ```
