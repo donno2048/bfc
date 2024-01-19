@@ -2,4 +2,8 @@ build
 dist
 output
 input.bf
+0
+hello
+reverse
+sort
 *.egg-info

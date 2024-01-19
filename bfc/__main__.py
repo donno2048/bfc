@@ -5,6 +5,6 @@ except ImportError:
     from __init__ import compile
 def main():
     if len(argv) != 3: return print(f"Usage: {argv[0]} input.bf output")
-    compile(argv[1], argv[2])
+    compile(argv[1] if argv[1] != '-' else 0, argv[2])
 if __name__ == "__main__":
     main()

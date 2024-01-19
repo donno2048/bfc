@@ -1,0 +1,14 @@
+name: Testing
+on:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: self-hosted # arm64 linux
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+    - run: |
+        python setup.py install
+        ./test.sh
